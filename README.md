@@ -1,9 +1,9 @@
-# easy-doc-api
+# Easy Doc API 🏥
 Uma aplicação para gerenciamento de hisórico de consultas de pacientes.
 
-# ROTAS
+# ROTAS 
 
-## Paciente
+## Paciente:
 
 ### POST – /pacientes/register 
 Responsável por cadastrar um novo paciente. 
@@ -12,7 +12,7 @@ Responsável por cadastrar um novo paciente.
   - Autenticação: O usuário precisa estar autenticado para poder cadastrar um paciente
 
 Os dados solicitados pela API são:
-
+```
     {
    	"nome": "",
 	"dataNascimento": "01/01/2000",
@@ -27,6 +27,8 @@ Os dados solicitados pela API são:
 	"email": "", 
 	"arquivos_id": ""
     }
+    
+ ```   
 
 | Campos NOT NULL | Mensagem |
 |--|--|
@@ -78,7 +80,7 @@ Rotas responsável por desativar um paciente.
 
 ---
 
-## Médico
+## Médico 👨🏼‍⚕️
 
 ### POST – /medicos/register
 Responsável por cadastrar um novo médico. 
@@ -88,12 +90,14 @@ Responsável por cadastrar um novo médico.
 
 Os dados solicitados pela API são:
 
+```
     {
     "nome": "kamila",
     "email": "kamila@gmail.com" ,
     "password": "1234", 
     "categoria": "R4" 
     }
+```
 
 | Campos NOT NULL | Mensagem |
 |--|--|
@@ -150,10 +154,12 @@ Responsável por logar um medico.
 
 Os dados solicitados pela API são:
 
+```
     {
     "nome": "kamila",
     "email": "kamila@gmail.com" ,
     }
+```    
 
 | Campos NOT NULL | Mensagem |
 |--|--|
@@ -178,10 +184,13 @@ Responsável por cadastra um novo exame.
 
 Os dados solicitados pela API são:
 
+Os dados solicitados pela API são:
+```
     {    
    	"laudo": "uma string",
 	"anexos": ""
     }
+```
 
 | Campos NOT NULL | Mensagem |
 |--|--|
@@ -234,6 +243,7 @@ Responsável por cadastra um novo exame.
 
 Os dados solicitados pela API são:
 
+```
     {
         "gs/rh": "",
         "coombs": "",
@@ -255,6 +265,7 @@ Os dados solicitados pela API são:
         "strep": "",
         "Eletro": ""
     }
+```
 
 | Campos NOT NULL | Mensagem |
 |--|--|
@@ -305,6 +316,7 @@ Responsável por cadastrar uma nova consulta.
 
 Os dados solicitados pela API são:
 
+```
     {
         "paridade": "" (NOT NULL)
         "consanguinidade": "" (NOT NULL)
@@ -315,6 +327,7 @@ Os dados solicitados pela API são:
         "historiaPregressa": "" (NOT NULL)
         "historiaGinecologicaObstetrica": "" (NOT NULL)
     }
+```
 
 | Campos NOT NULL | Mensagem |
 |--|--|
@@ -371,6 +384,7 @@ Responsável por cadastrar uma nova consulta.
 
 Os dados solicitados pela API são:
 
+```
     {
         peso: number (NOT NULL)
         pressaoArterial: string
@@ -383,6 +397,7 @@ Os dados solicitados pela API são:
         conduta: string
         retorno: Date ex: 10-12-2022
     }
+```
 
 | Campos NOT NULL | Mensagem |
 |--|--|
